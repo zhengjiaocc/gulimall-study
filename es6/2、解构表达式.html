@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 数组解构表达式
+        let arr = [1,2,3];
+        // let a = arr[0];
+        // let b = arr[1];
+        // let c = arr[2];
+
+        // let[a,b,c]=arr;
+
+        // console.log(a)
+        // console.log(b)
+        // console.log(c)
+
+        // 对象解构表达式
+        const person = {
+            name: "jack",
+            age: 21,
+            language: ['java','js','css']
+        }
+
+        // const name=person.name;
+        // const age=person.age;
+        // const language=person.language;
+
+        const{name:abc,age,language}=person;
+
+        // console.log(name,age,language);
+
+        //4.字符串扩展
+        // let str = "hello.vue";
+        // console.log(str.startsWith("hello"));
+        // console.log(str.endsWith(".vue"));
+        // console.log(str.includes("e"));
+        // console.log(str.includes("hello"))
+
+        // 5.字符串模板
+        // let ss = `
+
+        // <div>
+
+        // <span>hello world<span>
+        // </div>;
+        // `
+        // console.log(ss);
+
+        // 字符串插入变量和表达式
+
+        
+        function fun(){
+            return "这是一个函数"
+        }
+        let info=`我是${abc},今年${age+10}了，我想说：${fun()}`
+        console.log(info)
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
