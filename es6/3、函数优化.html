@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 以前写法
+
+        function add(a,b){
+            b=b || 1;
+            return a+b;
+        }
+        console.log(add(10));
+
+        
+        // 现在写法 
+        function add2(a,b=1){
+            return a+b;
+        }
+        console.log(add2(20))
+
+        // 不定参数
+        function fun(...values){
+            console.log(values.length);
+        }
+
+
+        fun(1,2)
+        fun(1,2,3)
+
+
+        // 箭头函数
+        // 以前声明方法
+
+        // var print =function(obj){
+        //     console.log(obj)
+        // }
+
+        // print("hello")
+
+        // 现在
+        // var print = obj =>console.log(obj);
+        // print("hello");
+
+        // 多个参数
+        // var sum =function(a,b){
+        //     return a+b
+        // }
+
+        // var sum2=(a,b)=>a+b;
+
+        // 方法体内容多
+        // var sum3=(a,b)=>{
+        //     c=a+b;
+        //     return a+c;
+        // }
+        // console.log(sum3(10,20))
+
+        const person={
+            name: "jack",
+            age: 21,
+            language: ['java','js','css']
+        }
+
+        // function hello(person){
+        //     console.log("hello,"+ person.name)
+        // }
+
+        // var hello2=(param)=>console.log("hello,"+param.name);
+        // hello2(person)
+
+        // var hello3=({name})=>console.log("hello,"+name);
+        // hello3(person)
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>
